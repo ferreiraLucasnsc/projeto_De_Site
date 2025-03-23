@@ -1,0 +1,228 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* -- CONFIGURAÇÕES GLOBAIS -- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+/* -- PALETA DE CORES / VARIÁVEIS */
+
+:root {
+    --cor1: #0A74DA;
+    --cor2: #0a4d28;
+    --cor3: #548CA8;
+    --cor4: #bed7e2;
+    --cor5: #1D1F20;
+
+    --cor1leve: #0a74da80;
+    --cor2destaque: #3DDC84;
+}
+
+/* -- CONFIGURAÇÕES DO CABEÇALHO */
+
+header {
+    background-color: var(--cor1);
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor5));
+    min-height: 3em;
+    padding: 2.5em;
+    color: white;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.25em;
+    text-shadow: 0 0 20px var(--cor2destaque);
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header p {
+    font-size: 1.10em;
+    display: block;
+    margin: auto;
+    max-width: 75%;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* -- CONFIGURAÇÕES DO MENU -- */
+
+nav {
+    background-color: var(--cor5);
+    padding: 0.5em;
+    box-shadow: 0px 5px 10px #1d1f2040;
+}
+nav > a {
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+nav a:hover {
+    background-color: var(--cor1);
+    text-decoration: solid;
+    color: var(--cor5);
+    transition: ease 0.10s;
+}
+
+/* -- CONFIGURAÇÕES DO CORPO: ARTIGO -- */
+
+body {
+    background-color: var(--cor5);
+}
+main {
+    background-color: var(--cor4);
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-radius: 0 0 30px 30px;
+}
+main article h1 {
+    text-align: center;
+    font-size: 2em;
+    background-color: transparent;
+    background-image: linear-gradient(to left, transparent, var(--cor1leve), var(--cor1leve), transparent);
+    margin: -.5em -1em;
+    margin-bottom: .5em;
+    padding: .25em 1em;
+    color: white;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main article h2 {
+    font-size: 1.5em;
+    background-color: transparent;
+    background-image: linear-gradient(to right, var(--cor1leve), transparent);
+    padding: 0 1em;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main article p {
+    margin: .75em 0;
+    line-height: 1.5em;
+    text-indent: 1em;
+    text-align: justify;
+    color: var(--cor5);
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main article strong {
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--cor2);
+}
+main a {
+    background-color: var(--cor2destaque);
+    padding: 0.25em;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: var(--cor2);
+    transition: 0.4s ease;
+}
+main a::after {
+    content: '\00a0\1f517';
+}
+main article a:hover {
+    background-color: var(--cor2);
+    color: var(--cor2destaque);
+    transition: 0.2s ease;
+}
+main article img {
+    display: block;
+    margin: auto;
+}
+main article picture source {
+    display: block;
+    margin: auto;
+}
+main article div.video {
+    background-color: var(--cor3);
+    margin: 0 -2em 3em -2em;
+    padding: 2em;
+    padding-bottom: 40%;
+    position: relative;
+}
+main article div.video > iframe {
+    position: absolute;
+    top: 10%;
+    left: 21%;
+    width: 57.6%;
+    height: 80%;
+}
+
+
+/* -- CONFIGURAÇÕES DO CORPO: EXTRA */
+main aside {
+    background-color: var(--cor2);
+    margin: 2em 0;
+    padding: 1em 3em;
+    border-radius: 0 0 20px 20px;
+}
+main aside h3 {
+    background-color: transparent;
+    background-image: linear-gradient(to left, var(--cor2destaque), white);
+    color: var(--cor2);
+    font-size: 1.5em;
+    margin: -.68em -2em 1em -2em;
+    padding: .5em 1em;
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main aside p {
+    color: white;
+    line-height: 1.5em;
+    text-indent: 2em;
+    text-align: justify;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+main aside a:hover {
+    background-color: white;
+    color: var(--cor2);
+    transition: 0.2s ease;
+}
+main aside ul {
+    list-style-position: inside;
+    color: white;
+    list-style-type: none;
+    margin: 1em 0;
+    columns: 2;
+}
+
+/* -- CONFIGURAÇÕES DO RODAPÉ */
+
+footer {
+    background-color: var(--cor1);
+    padding: .5em 2em;
+    color: white;
+    text-align: center;
+    font-family: "Istok Web", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
